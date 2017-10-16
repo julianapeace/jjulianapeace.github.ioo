@@ -8,32 +8,25 @@
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
   <link href='https://fonts.googleapis.com/css?family=Oswald|PT+Serif' rel='stylesheet' type='text/css'>
   <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-       <span class="icon-bar"></span>
-       <span class="icon-bar"></span>
-       <span class="icon-bar"></span>
-      </button>
-        <a class="navbar-brand text-transform" href="#home">Juliana Mei</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="https://medium.com/@julianapeace">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+  <nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand text-transform" href="#">Juliana Mei</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto">
+      <a class="nav-item nav-link" href="#about">About</a>
+      <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
+      <a class="nav-item nav-link" href="https://medium.com/@julianapeace">Blog</a>
+      <a class="nav-item nav-link" href="#contact">Contact</a>
     </div>
-  </nav>
+  </div>
+</nav>
 
   <div id="home">
     <div class="home-wrap text-center">
@@ -66,42 +59,73 @@
   </div>
 
   <div id="portfolio">
-    <div class="container">
-      <div class="row portfolio-wrap text-center">
-        <h1>Portfolio</h1>
-        <hr class="primary">
-
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <a href="http://hhc.paperplane.io/" target="_blank"> <img class="portfolio-img" src="  http://i.imgur.com/W78mfbQ.png"></img></a>
-          <p class="text-transform">Section 8 Housing Platform</p>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <a href="http://thebigscaryidea.com/" target="_blank"> <img class="portfolio-img" src="http://i.imgur.com/GWZSOc2.png"></img></a>
-          <p class="text-transform">Universal Basic Income</p>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <a href="http://45.55.198.11:5000/" target="_blank"> <img class="portfolio-img" src="  http://i.imgur.com/1kC9Ndi.png"></img></a>
-          <p class="text-transform">Treffen: Meet Friends Conveniently</p>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <a href="#" target="_blank"><img class="portfolio-img" src="https://addons.opera.com/media/CACHE/images/extensions/35/140335/1.4.1.0-rev1/images/f7d0917b-2289-4347-a1c4-7b129c9f9fb1/c40b6dc2368cef3c5d50fbca16a320ff.jpg"></img></a>
-          <p class="text-transform">Object-oriented platform</p>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <a href="#" target="_blank"> <img class="portfolio-img" src="http://media.steampowered.com/apps/client/screenshot_ui_for_blog.jpg"></img></a>
-          <p class="text-transform">Neural Network</p>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <a href="#" target="_blank"> <img class="portfolio-img" src="  http://www.darktable.org/wp-content/uploads/2011/07/screenshot-1.png"></img></a>
-          <p class="text-transform">Data Science</p>
+    <div class="card-deck">
+      <div class="row">
+      <div class="card">
+        <a href="http://paysally.julianamei.com/page/calculator.html"><img class="card-img-top" src="https://i.imgur.com/5RLkAIi.png" alt="Card image cap"></a>
+        <div class="card-body">
+          <h4 class="card-title">PaySally: Gender Pay Gap</h4>
+          <p class="card-text">Python - US Census Data API - HTML - CSS - Bootstrap - Javascript - Jquery</p>
         </div>
       </div>
+
+      <div class="card">
+        <img class="card-img-top" src="https://i.imgur.com/iQxWnZA.png" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">PaySally: Gender Pay Gap</h4>
+          <p class="card-text">Python - US Census Data API - HTML - CSS - Bootstrap - Javascript - Jquery</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img-top" src="http://i.imgur.com/W78mfbQ.png" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Houston Housing Group: Affordable Housing Platform</h4>
+          <p class="card-text">HTML - CSS - Bootstrap - Javascript</p>
+        </div>
+      </div>
+</div>
+<div class="row">
+      <div class="card">
+        <img class="card-img-top" src="http://i.imgur.com/GWZSOc2.png" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Universal Basic Income</h4>
+          <p class="card-text">Javascript - Youtube API - HTML - CSS - Bootstrap - JQuery</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img-top" src="http://i.imgur.com/1kC9Ndi.png" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Treffen: Meet Friends Conveniently</h4>
+          <p class="card-text">Python - Yelp API - Google maps API - HTML - CSS - Bootstrap - Javascript</p>
+        </div>
+      </div>
+  <div class="card">
+    <img class="card-img-top" src="http://www.darktable.org/wp-content/uploads/2011/07/screenshot-1.png" alt="Card image cap">
+    <div class="card-body">
+      <h4 class="card-title">Object-oriented platform</h4>
+      <p class="card-text">Object-oriented programming - Javascript - Python - Constructor</p>
     </div>
+  </div>
+</div>
+<div class="row">
+  <div class="card">
+    <img class="card-img-top" src="http://media.steampowered.com/apps/client/screenshot_ui_for_blog.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h4 class="card-title">Neural Network</h4>
+      <p class="card-text">Tensorflow - Machine Learning - Artificial Intelligence - Neural Network</p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="https://addons.opera.com/media/CACHE/images/extensions/35/140335/1.4.1.0-rev1/images/f7d0917b-2289-4347-a1c4-7b129c9f9fb1/c40b6dc2368cef3c5d50fbca16a320ff.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h4 class="card-title">Data Science</h4>
+      <p class="card-text">Jupyter Notebook - Data Analysis - Data Visualization - D3.js - Kaggle - data.world</p>
+    </div>
+    </div>
+  </div>
+</div>
   </div>
 
   <div id="contact">
@@ -115,13 +139,13 @@
           <a href="https://drive.google.com/file/d/0B8WXGA1XF7uVQnUtcXl0QVR0MVE/view?usp=sharing" class="btn btn-default" target="_blank"><i class="fa fa-file-text-o fa-2x"></i></a>
           <div class="row">
             <div class="col-md-6 text-center">
-              <i class="fa fa-phone fa-4x"></i>
-              <p>917-387-5481</p>
+              <a href="tel:9173875481"><i class="fa fa-phone fa-4x"></i>
+              <p>917-387-5481</p></a>
             </div>
 
             <div class="col-md-6 text-center">
-              <i class="fa fa-envelope-o fa-4x"></i>
-              <p><a href="mailto:hello@julianamei.com">hello@julianamei.com</a></p>
+              <a href="mailto:hello@julianamei.com"><i class="fa fa-envelope-o fa-4x"></i>
+              <p>hello@julianamei.com</p></a>
             </div>
           </div>
         </div>
