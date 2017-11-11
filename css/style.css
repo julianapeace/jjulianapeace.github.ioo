@@ -10,7 +10,7 @@ body{
 NAVBAR
 ******************************************************/
 
-.navbar {
+/*.navbar {
   background-color: #000;
 }
 
@@ -23,14 +23,19 @@ NAVBAR
   font-size: 35px;
   font-family: "Oswald", sans-serif;
   letter-spacing: 5px;
-}
+}*/
 /******************************************************
 HOME
 ******************************************************/
 #home {
-  background: url("http://i.imgur.com/B0sMArq.jpg") no-repeat center top;
+  /*background: url("http://i.imgur.com/B0sMArq.jpg") no-repeat center top;
   height: 100vh;
+  background-size: cover;*/
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/953/mision.jpg) no-repeat top center;
   background-size: cover;
+  position: relative;
+  width: 100%;
+  min-height: 100%;
 }
 .home-line {
   border: 0;
@@ -56,7 +61,7 @@ PORTFOLIO
   font-size: 20px;
 }
 .selfie {
-  border-radius: 10%;
+  border-radius: 4px;
   margin-top: 20px;
   width: 60%;
 }
@@ -110,11 +115,107 @@ MOBILE FRIENDLY
 #home h1{
   font-size: 40px;
 }
-.navbar{
+/*.navbar{
   max-width: 100%;
-}
+}*/
 .home-wrap{
   top:50%;
   left: 10%;
 }
+ }
+
+ /******************************************************
+SVG MASK
+ ******************************************************/
+
+ html {
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   text-rendering: optimizelegibility;
+ }
+
+ html,
+ body {
+   height: 100%;
+ }
+
+ body {
+   font-family: 'Open Sans', sans-serif;
+ }
+
+ .text, .text2 {
+   position: sticky;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 250px;
+   z-index: 10;
+ }
+ svg {
+   width: 100%;
+   height: inherit;
+ }
+ svg text {
+   text-anchor: middle;
+ }
+ svg #alpha,#alpha2 {
+   fill: #666666;
+ }
+ svg #title,#title2{
+   letter-spacing: -2px;
+   font-size: 6em;
+   font-weight: 800;
+ }
+ svg #subtitle,#subtitle2 {
+   letter-spacing: 8px;
+   font-size: 1.2em;
+   font-weight: 300;
+   text-transform: uppercase;
+ }
+ svg #base{
+   fill: black;
+   -webkit-mask: url(#mask);
+           mask: url(#mask);
+ }
+ svg #base2{
+   fill: black;
+   -webkit-mask: url(#mask2);
+           mask: url(#mask2);
+ }
+/*
+ section.intro {
+   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/953/mision.jpg) no-repeat top center;
+   background-size: cover;
+   position: relative;
+   width: 100%;
+   min-height: 100%;
+ }*/
+
+ /******************************************************
+Parallax divider
+ ******************************************************/
+ .sep {
+ 	background-attachment: fixed;
+ 	background-position: 50% 0;
+ 	background-repeat: no-repeat;
+ 	height: 450px;
+ 	position: relative;
+ }
+
+ .about {
+ 	background-image: url('https://fiberopticnow.github.io/media/css_code.jpg');
+  opacity:.65;
+ }
+
+ .portfolio {
+  background-image: url('https://i.imgur.com/B0sMArq.jpg');
+  opacity:.65;
+  position: relative;
+  width: 100%;
+ }
+
+ .contact {
+  margin-bottom: 100px;
+ 	background-image: url('https://i.ytimg.com/vi/C2O7lM0bU0g/maxresdefault.jpg');
+  opacity:.65;
  }
