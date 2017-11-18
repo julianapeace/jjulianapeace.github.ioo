@@ -5,17 +5,22 @@
   <meta charset="UTF-8">
   <title>Julie's Personal Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-  <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-<link href="https://fonts.googleapis.com/css?family=Arvo|Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Arvo|Roboto+Slab" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-orange.min.css">
+
 
 </head>
 
 <body>
+  <div class="loader-container">
+    <div class="loader"></div>
+  </div>
   <!-- <div class="sep about" data-stellar-background-ratio="0.5"></div> -->
   <div id="home">
     <div class="navigation">
@@ -24,10 +29,10 @@
       </div>
       <div class="nav-social">
         <a class="email" target="_blank" href="mailto:chancecordelia@gmail.com"><i class="fa fa-envelope-o"></i></a>
-         <a class="github" target="_blank" href="https://github.com/julianapeace"><i class="fa fa-github"></i></a>
-         <a class="linkedin" target="_blank" href="http://linkedin.com/in/julianamei"><i class="fa fa-linkedin"></i></a>
-         <a class="twitter" target="_blank" href="http://twitter.com/jesslynlandgren"><i class="fa fa-twitter"></i></a>
-         <a class="medium" target="_blank" href="http://medium.com/@julianapeace"><i class="fa fa-medium"></i></a>
+        <a class="github" target="_blank" href="https://github.com/julianapeace"><i class="fa fa-github"></i></a>
+        <a class="linkedin" target="_blank" href="http://linkedin.com/in/julianamei"><i class="fa fa-linkedin"></i></a>
+        <a class="twitter" target="_blank" href="http://twitter.com/jesslynlandgren"><i class="fa fa-twitter"></i></a>
+        <a class="medium" target="_blank" href="http://medium.com/@julianapeace"><i class="fa fa-medium"></i></a>
       </div>
     </div>
     <div class="text">
@@ -59,8 +64,13 @@
         <div class="col-lg-8 col-md-6 col-sm-6 text-center">
           <h2 class="section-heading">Welcome to my corner of the web!</h2>
           <p class="text=center" style="font-size:30px;">//</p>
-          <!-- <hr class="home-line"> -->
           <p>Creative, strategic and results-driven team player with a passion for approaching every experience with an entrepreneurial perspective, building community, and creating value for growing companies. A highly motivated self starter.</p>
+  <form action="#">
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+      <input class="mdl-textfield__input" type="text" id="sample3">
+      <label class="mdl-textfield__label" for="sample3">Type a skill...</label>
+    </div>
+</form>
         </div>
       </div>
     </div>
@@ -85,103 +95,228 @@
   <!--
 PORTFOLIO
 -->
-<div class="portfolio">
-  <div class="row">
-    <div class="proj">
-      <img src="/css/treffen-2.png" alt="treffen the most socialist app">
-      <div class="overlap">
-        <h2>Treffen</h2>
+  <div id="portfolio">
+    <h1 class="portfolio-title">Treffen</h1>
+    <div class="rockets">
+      <div class="row">
+        <div class="col-lg-6 col-mg-6 col-sm-12">
+          <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+            <div class="mdl-card-treffen">
+              <h2 class="mdl-card__title-text"></h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+            The Most Socialist Meet-Up App: Triangulates multiple zip codes and pulls up the businesses closest the centerpoint so no one drives further nor sits in traffic longer.
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <a href="https://github.com/julianapeace/treffen" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+        GitHub
+      </a>
+              <a href="http://treffen.herokuapp.com/"class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+        Live Demo
+      </a>
+        <i class="fa fa-2x fa-css3" aria-hidden="true"></i>
+        <i class="fa fa-2x fa-html5" aria-hidden="true"></i>
+        <i class="skill-icon devicon-nodejs-plain"></i>
+        <i class="skill-icon devicon-javascript-plain"></i>
+
+            </div>
+            <div class="mdl-card__menu">
+              <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+        <i class="material-icons">share</i>
+      </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <p data-height="500" data-theme-id="0" data-slug-hash="gWWZgR" data-default-tab="js" data-user="gaearon" data-embed-version="2" data-pen-title="Tic Tac Toe" class="codepen">See the Pen <a href="https://codepen.io/gaearon/pen/gWWZgR/">Tic Tac Toe</a> by Dan Abramov (<a href="https://codepen.io/gaearon">@gaearon</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+        </div>
       </div>
     </div>
-    <div class="proj">
-      <img src="/css/getmypup.png" alt="get my pup">
-      <div class="overlap">
-        <h2>GetMyPup</h2>
+
+    <hr />
+
+<!-- GETMYPUP -->
+<h1 class="portfolio-title">GET MY PUP</h1>
+    <div class="rockets">
+      <div class="row">
+        <div class="col-lg-6 col-mg-6 col-sm-12">
+          <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+            <div class="mdl-card-pup">
+              <h2 class="mdl-card__title-text"></h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              The De-Fragmented Animal Shelter Database: Built for shelters to centralizes lost animal information. Features leveled user privileges and easy-to-use data manipulation.
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+              <a href="https://github.com/Dog-Shelter-App/dog-shelter-app" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+        Github
+      </a>
+      <a href="http://getmypup.julianamei.com/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+Live Demo
+</a>
+<i class="skill-icon devicon-python-plain"></i>
+<i class="skill-icon devicon-mongodb-plain"></i>
+<i class="skill-icon devicon-jquery-plain"></i>
+<i class="fa fa-2x fa-html5" aria-hidden="true"></i>
+<i class="fa fa-2x fa-css3" aria-hidden="true"></i>
+<i class="skill-icon devicon-nodejs-plain"></i>
+            </div>
+            <div class="mdl-card__menu">
+              <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+        <i class="material-icons">share</i>
+      </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <p data-height="500" data-theme-id="0" data-slug-hash="gWWZgR" data-default-tab="js,result" data-user="gaearon" data-embed-version="2" data-pen-title="Tic Tac Toe" class="codepen">See the Pen <a href="https://codepen.io/gaearon/pen/gWWZgR/">Tic Tac Toe</a> by Dan Abramov (<a href="https://codepen.io/gaearon">@gaearon</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+        </div>
       </div>
     </div>
+
+    <!-- OTHER PROJECTS -->
+    <div class="rockets-object">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+  <div class="mdl-card-geo">
+    <h2 class="mdl-card__title-text"></h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+    Guarantees data free of human-error: Built for Ph.D geologist and researchers
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a href="https://geodbsearch.herokuapp.com" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      Live Demo
+    </a>
+    <i class="skill-icon devicon-python-plain"></i>
+
+  </div>
+  <div class="mdl-card__menu">
+    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+      <i class="material-icons">share</i>
+    </button>
   </div>
 </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+  <div class="mdl-card-paysally">
+    <h2 class="mdl-card__title-text"></h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+    A site to acknowledge the gender pay gap. Built at a women's startup hackathon. Features the Pay Gap Calculator.
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a href="https://paysally.herokuapp.com" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      Live Demo
+    </a>
+    <i class="skill-icon devicon-python-plain"></i>
+    <i class="skill-icon devicon-jquery-plain"></i>
+    <i class="fa fa-2x fa-html5" aria-hidden="true"></i>
+    <i class="fa fa-2x fa-css3" aria-hidden="true"></i>
+    <i class="skill-icon devicon-javascript-plain"></i>
+  </div>
+  <div class="mdl-card__menu">
+    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+      <i class="material-icons">share</i>
+    </button>
+  </div>
+</div>
+        </div>
+        <div class="col-lg-4">
+          <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+  <div class="mdl-card-geo">
+    <h2 class="mdl-card__title-text"></h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Mauris sagittis pellentesque lacus eleifend lacinia...
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a href="https://geodbsearch.herokuapp.com" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      Live Demo
+    </a>
+  </div>
+  <div class="mdl-card__menu">
+    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+      <i class="material-icons">share</i>
+    </button>
+  </div>
+</div>
+        </div>      </div>
+    </div>
+  </div>
 
   <div class="sep about" data-stellar-background-ratio="0.5"></div>
 
   <div class="skills">
-             <div class="filter-skills"></div>
-             <div class="cell have">
-                 <div class="skill-title">
-                     What I Know
-                 </div>
-                 <div class="skill-grid">
-                     <div class="icon-grid">
-                         <div class="label">HTML5</div>
-                         <i class="fa fa-4x fa-html5" aria-hidden="true"></i>
-                     </div>
-                     <div class="icon-grid">
-                         <div class="label">CSS3</div>
-                         <i class="fa fa-4x fa-css3" aria-hidden="true"></i>
-                     </div>
-                     <div class="icon-grid">
-                         <div class="label">JavaScript</div>
-                         <i class="skill-icon devicon-javascript-plain"></i>
-                     </div>
-                     <div class="icon-grid">
-                         <div class="label">AngularJS</div>
-                         <i class="skill-icon devicon-angularjs-plain"></i>
-                     </div>
-                     <div class="icon-grid">
-                         <div class="label">NodeJS</div>
-                         <i class="skill-icon devicon-nodejs-plain"></i>
-                     </div>
-                     <div class="icon-grid">
-                         <div class="label">Python</div>
-                         <i class="skill-icon devicon-python-plain"></i>
-                     </div>
-                     <div class="icon-grid">
-                         <div class="label">MongoDB</div>
-                         <i class="skill-icon devicon-mongodb-plain"></i>
-                     </div>
-                     <div class="icon-grid">
-                         <div class="label">PostGreSQL</div>
-                         <i class="skill-icon devicon-postgresql-plain"></i>
-                     </div>
-                     <div class="icon-grid">
-                         <div class="label">Java</div>
-                         <i class="skill-icon devicon-java-plain"></i>
-                     </div>
-                     <div class="icon-grid">
-                         <div class="label">JQuery</div>
-                         <i class="skill-icon devicon-jquery-plain"></i>
-                     </div>
-                     <div class="icon-grid">
-                         <div class="label">Bootstrap</div>
-                         <i class="skill-icon devicon-bootstrap-plain"></i>
-                     </div>
-                     <div class="icon-grid">
-                         <div class="label">Django</div>
-                     <i class="devicon-django-plain"></i>
-                   </div>
-                   <div class="icon-grid">
-                       <div class="label">React.js</div>
-                       <i class="skill-icon devicon-react-original"></i>
-                   </div>
-                 </div>
-             </div>
-             <div class="cell want">
-                 <div class="skill-title">
-                     What I'm learning now
-                 </div>
-                 <div class="skill-grid">
-                     <div class="icon-grid">
-                         <div class="label">D3.js</div>
-                         <i class="skill-icon devicon-d3js-plain"></i>
-                     </div>
-                     <div class="icon-grid">
-                         <div class="label">Ruby</div>
-                         <i class="skill-icon devicon-ruby-plain"></i>
-                     </div>
-                 </div>
-             </div>
-         </div>
-<img src="https://ghchart.rshah.org/409ba5/julianapeace" alt="Juliana's Github chart" />
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <h1>What I learned</h1>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <h1>What I'm Learning</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-md-g col-sm-12">
+        <!-- PUT YOUR SKILLS IN HERE -->
+        <i id="python"class="skill-skill devicon-python-plain"></i>
+        <div class="mdl-tooltip" for="python">
+Python</div>
+        <i id="mongodb"class="skill-skill devicon-mongodb-plain"></i>
+        <div class="mdl-tooltip" for="mongodb">
+MongoDB</div>
+        <i id="html"class="fa fa-skill fa-5x fa-html5" aria-hidden="true"></i>
+        <div class="mdl-tooltip" for="html">HTML5</div>
+
+        <i id="css"class="fa fa-skill fa-5x fa-css3" aria-hidden="true"></i>
+        <div class="mdl-tooltip" for="css">CSS3</div>
+
+        <i id="js"class="skill-skill devicon-javascript-plain"></i>
+        <div class="mdl-tooltip" for="js">Javascript</div>
+
+        <i id="nodejs"class="skill-skill devicon-nodejs-plain"></i>
+        <div class="mdl-tooltip" for="nodejs">
+NodeJS</div>
+        <i id="postgres"class="skill-skill devicon-postgresql-plain"></i>
+        <div class="mdl-tooltip" for="postgres">PostGreSQL</div>
+
+        <i id="jquery"class="skill-skill devicon-jquery-plain"></i>
+        <div class="mdl-tooltip" for="jquery">jQuery</div>
+
+        <i id="bootstrap"class="skill-skill devicon-bootstrap-plain"></i>
+        <div class="mdl-tooltip" for="bootstrap">Bootstrap</div>
+
+        <i id="react"class="skill-skill devicon-react-original"></i>
+        <div class="mdl-tooltip" for="react">
+React</div>
+        <i id="django"class="skill-skill devicon-django-plain"></i>
+        <div class="mdl-tooltip" for="django">Django</div>
+      </div>
+      <div class="col-lg-6 col-md-g col-sm-12">
+        <i id="java"class="skill-skill devicon-java-plain"></i>
+        <div class="mdl-tooltip" for="java">Java</div>
+        <i id="d3js"class="skill-skill devicon-d3js-plain"></i>
+        <div class="mdl-tooltip" for="d3js">D3.js</div>
+
+        <i id="ruby"class="skill-skill devicon-ruby-plain"></i>
+        <div class="mdl-tooltip" for="ruby">Ruby</div>
+
+        <i id="angular"class="skill-skill devicon-angularjs-plain"></i>
+        <div class="mdl-tooltip" for="angular">Angular</div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="github-commits">
+    <img style="width: 100%" src="https://ghchart.rshah.org/409ba5/julianapeace" alt="Juliana's Github chart" />
+  </div>
+
   <div class="sep contact" data-stellar-background-ratio="0.5"></div>
 
   <div id="contact">
@@ -215,8 +350,10 @@ PORTFOLIO
   <script src="/js/jquery.nav.js"></script>
   <script src="/js/jquery.stellar.min.js"></script>
   <script src="js/jBox.min.js"></script>
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   <script>
     $(document).ready(function() {
+      $(".loader-container").fadeOut("slow")
       $('#nav').onePageNav();
     });
 
