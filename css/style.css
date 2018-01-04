@@ -3,6 +3,7 @@ body{
   /*line-height: 200%;*/
   /*height: 100%;*/
 }
+
 /******************************************************
 MATERIALIZE
 ******************************************************/
@@ -37,11 +38,7 @@ MATERIALIZE
   padding:40px;
   opacity: 0.6;
 }
-.portfolio-title{
-  text-transform: uppercase;
-  font-family: 'Arvo';
-  letter-spacing: 3px;
-}
+
 /******************************************************
 SKILLS
 ******************************************************/.skill-icon{
@@ -179,14 +176,22 @@ PORTFOLIO
 .selfie {
   border-radius: 4px;
   margin-top: 20px;
-  width: 90%;
+  width: 70%;
 }
 #portfolio{
-  padding: 50px;
+  padding: 10px;
 }
 
 #contact {
   padding-bottom:100px;
+}
+.portfolio-title{
+  font-family: 'Arvo';
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  display:flex;
+  align-items: baseline;
+
 }
 /******************************************************
 BUTTONS
@@ -318,10 +323,11 @@ Parallax divider
  }
 
  .portfolio {
-  background-image: url('https://i.imgur.com/B0sMArq.jpg');
+  /* background-image: url('https://i.imgur.com/B0sMArq.jpg'); */
   opacity:.65;
   position: relative;
   width: 100%;
+  height: 220px;
  }
 
  .contact {
